@@ -1,4 +1,4 @@
-// récupérer les éléments du DOM
+// récupérer les éléments DOM
 const cases = [...document.getElementsByClassName("case")]; // nodelist -> array
 let joueur = document.getElementById("joueur");
 let score1 = document.getElementById("score1");
