@@ -118,4 +118,4 @@ const jouerCase = (e) => {
 cases.forEach((el) => {
   el.addEventListener("click", jouerCase);
 });
-
+//LOCAL STORAG
