@@ -6,29 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="https://www.icons101.com/icon_png/size_512/id_75826/TicTacToeGame.Pnggit">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
     <title>TIC TAC TOC</title>
 </head>
 <body>
-    <h1 id="h1">Tic Tac Toe</h1>
-        <div id="grid">
-            <div id="c1" class="case"></div>
-            <div id="c2" class="case"></div>
-            <div id="c3" class="case"></div>
-            <div id="c4" class="case"></div>
-            <div id="c5" class="case"></div>
-            <div id="c6" class="case"></div>
-            <div id="c7" class="case"></div>
-            <div id="c8" class="case"></div>
-            <div id="c9" class="case"></div>
-        </div>
-    <div id="score">
-      <p>Joueur <span id="joueur">1</span></p>
-      <p>Score Joueur 1 : <span id="score1">0</span></p>
-      <p>Score Joueur 2 : <span id="score2">0</span></p>
-      <p>Matchs nuls : <span id="scoreNul">0</span></p>
+    <div id="main">
+        <h1>TIC TAC TOE</h1>
+   
+        <!-- Game Instructions -->
+        <p id="ins">Game starts by just Tap on 
+            box<br><br>First Player starts as 
+            <b>Player X</b><br>And<br>Second 
+            Player as <b>Player 0</b>
+        </p>  
+        <br><br>
+        <!-- 3*3 grid of Boxes -->
+        <input type="button" id="b1" onclick=
+            "btn1(); myfunc();" readonly>
+   
+        <input type="button" id="b2" onclick=
+            "btn2(); myfunc();" readonly>
+   
+        <input type="button" id="b3" onclick=
+            "btn3(); myfunc();" readonly>
+        <br><br>
+   
+        <input type="button" id="b4" onclick=
+            "btn4(); myfunc();" readonly>
+               
+        <input type="button" id="b5" onclick=
+            "btn5(); myfunc();" readonly>
+   
+        <input type="button" id="b6" onclick=
+            "btn6(); myfunc();" readonly>
+        <br><br>
+   
+        <input type="button" id="b7" onclick=
+            "btn7(); myfunc();" readonly>
+   
+        <input type="button" id="b8" onclick=
+            "btn8();myfunc();" readonly>
+   
+        <input type="button" id="b9" onclick=
+            "btn9();myfunc();" readonly>
+   
+        <!-- Grid end here  -->
+        <br><br><br>
+        <!-- Button to reset game -->
+        <button id="but" onclick="restart()">
+            RESTAR
+        </button>
+   
+        <br><br>
+        <!-- Space to show player turn -->
+        <p id="print"></p>
+
     </div>
-    <button onclick="rest()" type="button" class="btn btn-primary">Clear</button>
 <script src="script.js"></script>
 </body>
 </html>
